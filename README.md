@@ -11,7 +11,12 @@ CLI tool to strip out glyphs from a font. Uses fontTools.subset to handle GSUB/G
 
   remove all glyphs found in another font: ```remove_glyphs.py -i source.ttf -o cleaned.ttf -r otherFont.otf```
 
-  ```options:
+  ```
+usage: remove_glyphs.py [-h] -i INPUT -o OUTPUT [-g [GLYPHS ...]] [-f GLYPH_FILE] [-r REMOVE_FROM_FONT]
+
+Strip glyphs from a font.
+
+options:
   -h, --help            show this help message and exit
   -i, --input INPUT     Source font path (.ttf/.otf)
   -o, --output OUTPUT   Destination for cleaned font
