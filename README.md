@@ -5,6 +5,10 @@ Random utilities
 
 CLI tool to strip out glyphs from a font. Uses fontTools.subset to handle GSUB/GPOS, mark lookups, etc. Your font is left with less characters! YAY!
 
+```usage: remove_glyphs_from_font.py [-h] -i INPUT -o OUTPUT [-g [GLYPHS ...]] [-f GLYPH_FILE] [-r REMOVE_FROM_FONT]
+
+Strip glyphs from a font before merging or repackaging.
+
 options:
   -h, --help            show this help message and exit
   -i, --input INPUT     Source font path (.ttf/.otf)
