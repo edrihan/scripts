@@ -5,19 +5,11 @@ Random utilities
 
 CLI tool to strip out glyphs from a font. Uses fontTools.subset to handle GSUB/GPOS, mark lookups, etc.
 
-Usage examples:
+  remove named glyphs: ```remove_glyphs.py -i source.ttf -o cleaned.ttf -g A B C```
 
-  remove named glyphs:
-  
-  ```remove_glyphs.py -i source.ttf -o cleaned.ttf -g A B C```
+  remove glyphs for every character in a text file: ```remove_glyphs.py -i source.ttf -o cleaned.ttf -f chars.txt```
 
-  remove glyphs for every character in a text file:
-  
-  ```remove_glyphs.py -i source.ttf -o cleaned.ttf -f chars.txt```
-
-  remove all glyphs found in another font:
-  
-  ```remove_glyphs.py -i source.ttf -o cleaned.ttf -r otherFont.otf```
+  remove all glyphs found in another font: ```remove_glyphs.py -i source.ttf -o cleaned.ttf -r otherFont.otf```
 
   ```options:
   -h, --help            show this help message and exit
